@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Agrinho: Estações e Cultivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Semeando o Futuro</h1>
+        <p>Projeto Agrinho 2026 - O Guia do Jovem Agricultor Aprendiz</p>
+    </header>
+
+    <main>
+        <div class="abas-estacoes">
+            <button class="btn-estacao ativo" onclick="mudarEstacao('outono')">🍂 Outono</button>
+            <button class="btn-estacao" onclick="mudarEstacao('inverno')">❄️ Inverno</button>
+            <button class="btn-estacao" onclick="mudarEstacao('primavera')">🌱 Primavera</button>
+            <button class="btn-estacao" onclick="mudarEstacao('verao')">☀️ Verão</button>
+        </div>
+
+        <div id="outono" class="conteudo-estacao ativo">
+            <h2 class="titulo-estacao">🍂 Outono: Tempo de Preparar a Terra</h2>
+            <div class="grid-info">
+                <div class="card-info">
+                    <h3>🌾 Plantações Recomendadas</h3>
+                    <ul>
+                        <li>Hortaliças (Alface, Almeirão, Couve)</li>
+                        <li>Cenoura e Beterraba</li>
+                        <li>Rabanete e Espinafre</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>💧 Métodos de Cuidado</h3>
+                    <ul>
+                        <li>Aproveite as folhas caídas para fazer cobertura morta no solo (protege contra o frio).</li>
+                        <li>Diminua a frequência das regas, pois a evaporação é menor.</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>✂️ Maneira Certa de Colher</h3>
+                    <ul>
+                        <li>Colha as folhas de alface pelas laterais, permitindo que o miolo continue crescendo.</li>
+                        <li>Cenouras devem ser colhidas puxando pela base das folhas com cuidado para não quebrar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="inverno" class="conteudo-estacao">
+            <h2 class="titulo-estacao">❄️ Inverno: Cuidado com as Geadas</h2>
+            <div class="grid-info">
+                <div class="card-info">
+                    <h3>🌾 Plantações Recomendadas</h3>
+                    <ul>
+                        <li>Brócolis e Couve-Flor</li>
+                        <li>Repolho e Alho-Poró</li>
+                        <li>Ervilha e Cebola</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>💧 Métodos de Cuidado</h3>
+                    <ul>
+                        <li>Regue as plantas logo no início da manhã para evitar que a água congele à noite.</li>
+                        <li>Use lonas ou coberturas de TNT para proteger as plantas sensíveis nas noites de geada.</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>✂️ Maneira Certa de Colher</h3>
+                    <ul>
+                        <li>Colha os brócolis quando a cabeça estiver bem firme e os botões fechados.</li>
+                        <li>A cebola está pronta quando as folhas secam e "tombam" no chão.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="primavera" class="conteudo-estacao">
+            <h2 class="titulo-estacao">🌱 Primavera: A Explosão da Vida</h2>
+            <div class="grid-info">
+                <div class="card-info">
+                    <h3>🌾 Plantações Recomendadas</h3>
+                    <ul>
+                        <li>Tomate e Pimentão</li>
+                        <li>Abóbora e Abobrinha</li>
+                        <li>Feijão e Milho Verde</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>💧 Métodos de Cuidado</h3>
+                    <ul>
+                        <li>Aumente a rega conforme os dias ficam mais quentes.</li>
+                        <li>Adube a terra com composto orgânico para dar energia extra ao crescimento.</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>✂️ Maneira Certa de Colher</h3>
+                    <ul>
+                        <li>Corte o tomate com uma tesoura de poda mantendo um pedacinho do cabinho para durar mais.</li>
+                        <li>Abobrinhas devem ser colhidas ainda jovens e macias.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="verao" class="conteudo-estacao">
+            <h2 class="titulo-estacao">☀️ Verão: Sol e Muita Água</h2>
+            <div class="grid-info">
+                <div class="card-info">
+                    <h3>🌾 Plantações Recomendadas</h3>
+                    <ul>
+                        <li>Melancia e Melão</li>
+                        <li>Milho e Mandioca</li>
+                        <li>Quiabo e Berinjela</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>💧 Métodos de Cuidado</h3>
+                    <ul>
+                        <li>Regue duas vezes ao dia: bem cedo e no fim da tarde (nunca sob o sol forte).</li>
+                        <li>Use telas de sombreamento (sombrite) para proteger folhas delicadas do sol escaldante.</li>
+                    </ul>
+                </div>
+                <div class="card-info">
+                    <h3>✂️ Maneira Certa de Colher</h3>
+                    <ul>
+                        <li>A melancia está pronta quando o som ao dar batidinhas nela for "oco".</li>
+                        <li>Colha o milho quando os cabelos da espiga estiverem bem marrons e secos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="dicas-aprendiz">
+            <h2>💡 Espaço do Aprendiz: Dicas de Quem Vive na Prática</h2>
+            
+            <div class="balao-dica">
+                <p><strong>Dica do Léo (1º Ano):</strong> "No começo, eu esquecia de regar. A dica de ouro é colocar o dedo na terra: se sair sujo e úmido, não precisa de água; se sair seco, hora de regar!"</p>
+            </div>
+
+            <div class="balao-dica">
+                <p><strong>Dica da Sofia (1º Ano):</strong> "Cascas de ovo esmagadas ao redor das plantas ajudam a afastar lagartas e ainda servem como adubo de cálcio quando somem na terra!"</p>
+            </div>
+
+            <div class="balao-dica">
+                <p><strong>Dica do Vovô Chico (Mentor):</strong> "A natureza tem o tempo dela. Não adianta puxar a planta para crescer mais rápido. Cuidado diário e paciência dão a melhor colheita."</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho do 1º Ano - <span>Programa Agrinho 2026</span></p>
+        <p>Cultivando o conhecimento para um mundo melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
